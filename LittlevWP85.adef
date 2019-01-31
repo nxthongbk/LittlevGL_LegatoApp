@@ -1,0 +1,23 @@
+executables:
+{
+	littlevwp85 = ( LittlevWP85Component )
+}
+
+processes:
+{
+	envVars:
+	{
+		LE_LOG_LEVEL = DEBUG
+	}
+
+	run:
+	{
+		( littlevwp85 )
+	}
+
+	maxCoreDumpFileBytes: 512K
+	maxFileBytes: 512K
+}
+
+version: 1.0.0
+maxFileSystemBytes: 512K

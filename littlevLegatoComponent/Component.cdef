@@ -1,0 +1,11 @@
+bundles:
+{
+    file:
+    {
+        littlevgl/liblvgl.so     /lib/
+    }
+}
+externalBuild:
+{
+    "make -C ${CURDIR}/littlevgl/ blddir=build/output"
+}

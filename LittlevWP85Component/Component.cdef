@@ -1,0 +1,27 @@
+sources:
+{
+	LittlevWP85Component.c
+}
+requires:
+{
+    component:
+    {
+        littlevLegatoComponent
+    }
+     lib:
+    {
+        liblvgl.so
+    }
+}
+
+
+cflags:
+{
+    -std=c99
+    -I${CURDIR}/../littlevLegatoComponent/littlevgl/lvgl
+}
+
+ldflags:
+{
+    -L${CURDIR}/../littlevLegatoComponent/littlevgl
+}
